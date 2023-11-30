@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media {
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .main_items_container {
+    z-index:1;
+    user-select: none;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+  }
+  
+  .container-content.left{
+    z-index:1; 
+    background-color: #98AFC7;
+    color:white;
+  }
+  .container-content.right{
+    z-index:1;
+    max-width:60%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    align-items:center;
+    justify-content:center;
+    text-align:justify;
+    font-family:Garamond;
+  }
+  .main_items_container .main_items_container_child {
+    z-index:2;
+    width: 50%;
+    height: 100vh;
+  }
+  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .container-content-block {
+    z-index:1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Container{
+    z-index:3;
+    user-select: none;
+    position: absolute;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    top:0%;
+    justify-content: right;
+    align-items: center;
+    flex-direction:column;
+    height: 100%; 
+    width: 100%;
+  }
+
+  .Alta{
+    position:absolute;
+    color:white;
+    font-size:72px; 
+    left:3%;
+    top:80%;
+  }
+  .Baixa{
+    position:absolute;
+    color:#98AFC7;
+    font-size:72px; 
+    right:3%;
+    top:10%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

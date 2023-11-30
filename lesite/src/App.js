@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useCallback, useEffect} from "react";
+import Draggable from "react-draggable";
+import { useNavigate } from "react-router-dom";
+import MainItemsContainer from "./MainItemsContainer";
+import jquery from "jquery";
+import "./App.css";
 
-function App() {
+export default function App() {
+  const [deltaY, setDeltaY] = useState(0)
+  const [maxDelta, setMaxDelta] = useState(0)
+
+  
+
+  const scrollHandler = useCallback(event => {
+    setDeltaY(currentDeltaY => {
+      let newDeltaY = currentDeltaY + event.deltaY*0.5;
+
+      newDeltaY = Math.max(0, newDeltaY);
+      newDeltaY = Math.min(maxDelta, newDeltaY);
+
+      return newDeltaY;
+    });
+  }, [maxDelta])
+
+  useEffect(() => {
+    window.addEventListener("wheel", scrollHandler);
+
+    const maxDelta = jquery(".container-content").height() - window.innerHeight;
+
+    setMaxDelta(maxDelta);
+
+    return () => {
+      window.removeEventListener("wheel", scrollHandler);
+    }
+  }, [scrollHandler])
+
+  let style_first = {
+    transform: `translateY(-${maxDelta - deltaY}px)`
+  };
+
+  let style_second = {
+    transform: `translateY(-${deltaY}px)`
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainItemsContainer styleFirst={style_first} styleSecond={style_second}/>
     </div>
   );
 }
-
-export default App;

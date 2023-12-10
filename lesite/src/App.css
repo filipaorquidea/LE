@@ -1,79 +1,73 @@
 
 @media {
+  
   body {
     padding: 0px;
     margin: 0px;
+   
   }
-  
-  .main_items_container {
-    z-index:1;
-    user-select: none;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
+
+  ::-webkit-scrollbar{
+    display:none;
   }
-  
-  .container-content.left{
-    z-index:1; 
-    background-color: #98AFC7;
-    color:white;
-  }
-  .container-content.right{
-    z-index:1;
-    max-width:60%;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    align-items:center;
-    justify-content:center;
-    text-align:justify;
-    font-family:Garamond;
-  }
-  .main_items_container .main_items_container_child {
-    z-index:2;
+
+  .column {
+    
+    height: 100vh;
     width: 50%;
-    height: 100vh;
+    float: left;
+    overflow: scroll;
+    
+    
   }
   
-
-  .container-content-block {
-    z-index:1;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* Create artificial contecnt that extend past the viewport */
+  .content {
+    width: 70%; 
+    
+    height: 10000px;
+    margin: 20px auto;
+    line-height: 1.5em;
+    padding: 10px;
   }
-
-  .Container{
-    z-index:3;
-    user-select: none;
-    position: absolute;
-    font-family: sans-serif;
-    text-align: center;
-    display: flex;
-    top:0%;
-    justify-content: right;
-    align-items: center;
-    flex-direction:column;
-    height: 100%; 
-    width: 100%;
-  }
-
-  .Alta{
-    position:absolute;
+  
+  
+  /* Because we like pretty things */
+  .left { 
+    overflow:auto;
+    background: #3e285c; 
     color:white;
-    font-size:72px; 
-    left:3%;
-    top:80%;
   }
-  .Baixa{
-    position:absolute;
-    color:#98AFC7;
-    font-size:72px; 
-    right:3%;
-    top:10%;
+  .right { 
+    
+    background: white; 
   }
+
+
+#slide {
+  
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    transition: 1s;
+}
+#slideBaixa{
+  position:absolute;
+  top:0;
+  left:50vw;
+  width:50vw;
+  height:50vw;
+  transition:1s;
+}
+.right:hover #slideBaixa {
+  
+  transition:1s;
+  top:100vh;
+}
+.left:hover #slide {
+    transition: 1s;
+    top: -100vh;
 }
 
+}

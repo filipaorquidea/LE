@@ -1,6 +1,6 @@
 import React from "react";
 import {useState} from "react";
-
+import CapaAlta from "./media/CAPAALTA.png";
 import Draggable from "react-draggable";
 
 
@@ -52,8 +52,14 @@ export default function MainItemsContainer(props){
 
   return (
       <div className="main_items_container">
+       
+        
         <section className="main_items_container_child">
           <div className="container-content left"  style={props.styleFirst}>
+          
+        <div class="wrapper2">
+            <img id="slide2" src={CapaAlta} />
+        </div>
           <div className="container-content-block">
               1
             </div>

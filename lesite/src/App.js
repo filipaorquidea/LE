@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import MainItemsContainer from "./MainItemsContainer";
 import jquery from "jquery";
 import "./App.css";
+import CapaAlta from "./media/CAPAALTA.png";
+import CapaBaixa from "./media/CAPABAIXA.png";
 
 export default function App() {
   const [deltaY, setDeltaY] = useState(0)
@@ -45,7 +47,24 @@ export default function App() {
 
   return (
     <div className="App">
-      <MainItemsContainer styleFirst={style_first} styleSecond={style_second}/>
+      
+
+      
+      <div class="column left">
+
+        <img id="slide" src={CapaAlta} />
+      
+        <div class="content">
+          Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</div>
+        
+      </div>
+        
+      <div class="column right">
+      <img id="slideBaixa" src={CapaBaixa} />
+        <div class="content">Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</div>
+      </div>
+      
     </div>
+    
   );
 }

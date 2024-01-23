@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/LE/static/css/main.e2cfa191.css",
+    "main.css": "/LE/static/css/main.0691cedc.css",
     "main.js": "/LE/static/js/main.b7d56268.js",
     "static/media/LE_ALTO10.png": "/LE/static/media/LE_ALTO10.7050f625de12fabf8937.png",
     "static/media/artigo2_final21.png": "/LE/static/media/artigo2_final21.28c9069a91c60c42dcb4.png",
@@ -53,11 +53,11 @@
     "static/media/down-arrow-svgrepo-com.svg": "/LE/static/media/down-arrow-svgrepo-com.1edfab86f389055c97b80ec14e52f85c.svg",
     "index.html": "/LE/index.html",
     "static/media/down-arrow-svgrepo-com180.svg": "/LE/static/media/down-arrow-svgrepo-com180.f72905a1adfe314dbbf5.svg",
-    "main.e2cfa191.css.map": "/LE/static/css/main.e2cfa191.css.map",
+    "main.0691cedc.css.map": "/LE/static/css/main.0691cedc.css.map",
     "main.b7d56268.js.map": "/LE/static/js/main.b7d56268.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2cfa191.css",
+    "static/css/main.0691cedc.css",
     "static/js/main.b7d56268.js"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/LE/static/css/main.0691cedc.css",
-    "main.js": "/LE/static/js/main.b7d56268.js",
+    "main.css": "/LE/static/css/main.18779254.css",
+    "main.js": "/LE/static/js/main.37bd2aa2.js",
     "static/media/LE_ALTO10.png": "/LE/static/media/LE_ALTO10.7050f625de12fabf8937.png",
     "static/media/artigo2_final21.png": "/LE/static/media/artigo2_final21.28c9069a91c60c42dcb4.png",
     "static/media/artigo2_final14.png": "/LE/static/media/artigo2_final14.4f7d8017b753725d857f.png",
@@ -43,21 +43,22 @@
     "static/media/LE_ALTO17.png": "/LE/static/media/LE_ALTO17.4389c32e7aa4df6f21e2.png",
     "static/media/LE_ALTO12.png": "/LE/static/media/LE_ALTO12.8c62df49a4087019adda.png",
     "static/media/LE_ALTO16.png": "/LE/static/media/LE_ALTO16.deac5e763e6ca57b5ec1.png",
+    "static/media/LOGOS-25.png": "/LE/static/media/LOGOS-25.30c6c8f22f81c5e2e625.png",
     "static/media/LE_ALTO.png": "/LE/static/media/LE_ALTO.d5399569ef4fef224e17.png",
     "static/media/LE_ALTO11.png": "/LE/static/media/LE_ALTO11.e82594a9ab31f0353ced.png",
     "static/media/CAPAALTA.png": "/LE/static/media/CAPAALTA.a71592f890389c4e92c0.png",
-    "static/media/CAPABAIXA.png": "/LE/static/media/CAPABAIXA.f31b4b69ec20355efb6e.png",
+    "static/media/CAPABAIXA.png": "/LE/static/media/CAPABAIXA.0e8e0f73a061d544ad0e.png",
     "static/media/LE_ALTO20.png": "/LE/static/media/LE_ALTO20.49381cacd2d680f4b642.png",
     "static/media/LE_ALTO4.png": "/LE/static/media/LE_ALTO4.e6ff0d62938aa28b4c93.png",
     "static/media/LOGOS-24.png": "/LE/static/media/LOGOS-24.aa6e9a9dfdaefa4ce331.png",
     "static/media/down-arrow-svgrepo-com.svg": "/LE/static/media/down-arrow-svgrepo-com.1edfab86f389055c97b80ec14e52f85c.svg",
     "index.html": "/LE/index.html",
     "static/media/down-arrow-svgrepo-com180.svg": "/LE/static/media/down-arrow-svgrepo-com180.f72905a1adfe314dbbf5.svg",
-    "main.0691cedc.css.map": "/LE/static/css/main.0691cedc.css.map",
-    "main.b7d56268.js.map": "/LE/static/js/main.b7d56268.js.map"
+    "main.18779254.css.map": "/LE/static/css/main.18779254.css.map",
+    "main.37bd2aa2.js.map": "/LE/static/js/main.37bd2aa2.js.map"
   },
   "entrypoints": [
-    "static/css/main.0691cedc.css",
-    "static/js/main.b7d56268.js"
+    "static/css/main.18779254.css",
+    "static/js/main.37bd2aa2.js"
   ]
 }
